@@ -24,6 +24,7 @@ class AddActivity : AppCompatActivity() {
             addNote()
         }
 
+
     }
     fun addNote(){
         GlobalScope.async {

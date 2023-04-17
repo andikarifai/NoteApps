@@ -24,6 +24,11 @@ class DetailActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         // Tampilkan tombol kembali di toolbar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        // Tambahkan listener ke tombol kembali di toolbar
+        toolbar.setNavigationOnClickListener {
+            // Tutup aktivitas saat tombol kembali ditekan
+            finish()
+        }
 
         val getDetail = intent.getSerializableExtra("detail") as NoteData
 

@@ -34,6 +34,12 @@ class EditActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         // Tampilkan tombol kembali di toolbar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        // Tambahkan listener ke tombol kembali di toolbar
+        toolbar.setNavigationOnClickListener {
+            // Tutup aktivitas saat tombol kembali ditekan
+            finish()
+        }
+
     }
     fun editNote(){
         val idNote = binding.idNote.text.toString().toInt()

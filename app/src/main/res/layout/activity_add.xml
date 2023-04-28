@@ -9,50 +9,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        android:padding="16dp">
+        android:padding="16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <EditText
             android:id="@+id/tvId"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@null"
             android:hint="Id"
-            android:visibility="invisible"
             android:textColor="@color/black"
-            android:background="@null"/>
+            android:visibility="invisible" />
+
         <EditText
             android:id="@+id/tvDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Masukkan Tanggal"
-            android:textSize="14sp"
+            android:background="@null"
+            android:hint="@string/masukkan_tanggal"
             android:padding="8dp"
             android:textColor="@color/black"
-            android:background="@null"/>
+            android:textSize="14sp" />
 
         <EditText
             android:id="@+id/editTextTitle"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:hint="Masukan Judul"
-            android:inputType="text"
-            android:textSize="18sp"
-            android:padding="8dp"
             android:layout_marginTop="10dp"
+            android:background="@null"
+            android:hint="@string/masukan_judul"
+            android:inputType="text"
+            android:padding="8dp"
             android:textColor="@color/black"
-            android:background="@null"/>
+            android:textSize="18sp" />
 
 
         <EditText
             android:id="@+id/editTextDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Tulis catatan disini"
-            android:textSize="18sp"
-            android:padding="8dp"
             android:layout_marginTop="10dp"
+            android:background="@null"
+            android:hint="@string/tulis_catatan_disini"
+            android:padding="8dp"
             android:textColor="@color/black"
-            android:background="@null"/>
+            android:textSize="18sp" />
 
     </LinearLayout>
 

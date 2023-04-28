@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NoteApps</string>
+    <string name="masukkan_tanggal">Masukkan Tanggal</string>
+    <string name="masukan_judul">Masukan Judul</string>
+    <string name="tulis_catatan_disini">Tulis catatan disini</string>
+    <string name="edit_tanggal_note">Edit Tanggal Note</string>
+    <string name="edit_catatan">Edit Catatan</string>
+    <string name="add_your_note_title">add Your Note title</string>
+    <string name="edit_content_note">Edit Content Note</string>
 </resources>

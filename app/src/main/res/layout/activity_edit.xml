@@ -2,7 +2,6 @@
 <LinearLayout
     android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,7 +25,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_centerInParent="true"
-                    android:text="Edit Catatan"
+                    android:text="@string/edit_catatan"
                     android:textSize="20sp" />
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
@@ -40,7 +39,7 @@
         android:background="@null"/>
     <EditText
         android:id="@+id/editDate"
-        android:hint="Edit Tanggal Note"
+        android:hint="@string/edit_tanggal_note"
         android:maxLines="6"
         android:padding="8dp"
         android:layout_width="match_parent"
@@ -50,13 +49,13 @@
     <EditText
         android:id="@+id/editTitle"
         android:padding="8dp"
-        android:hint="add Your Note title"
+        android:hint="@string/add_your_note_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"/>
     <EditText
         android:id="@+id/editContent"
-        android:hint="Edit Content Note"
+        android:hint="@string/edit_content_note"
         android:padding="8dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

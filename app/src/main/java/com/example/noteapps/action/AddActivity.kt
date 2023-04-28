@@ -1,7 +1,10 @@
 package com.example.noteapps.action
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
+import com.example.noteapps.MainActivity
 import com.example.noteapps.databinding.ActivityAddBinding
 import com.example.noteapps.rooms.NoteData
 import com.example.noteapps.rooms.NoteDataBase
@@ -33,6 +36,13 @@ class AddActivity : AppCompatActivity() {
             val date = binding.tvDate.text.toString()
 
             noteDB!!.noteDao().insertNote(NoteData(0,title,content,date))
+
+            runOnUiThread {
+                Toast.makeText(this@AddActivity, "Note added successfully", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@AddActivity, MainActivity::class.java))
+                finish()
+            }
+
         }
     }
 }
